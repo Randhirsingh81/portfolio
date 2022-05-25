@@ -1,0 +1,19 @@
+When you run this React app and don't see the images, then it's probably because I've updated the
+of those images. Replace the urls in the application with the following ones.
+
+Resources used in the tutorials:
+
+Free Stock images:
+https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-1.jpg
+https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-2.jpg
+https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-3.jpg
+
+Skills images:
+https://storage.googleapis.com/unschool-portfolio-website/html5.png
+https://storage.googleapis.com/unschool-portfolio-website/css3.png
+https://storage.googleapis.com/unschool-portfolio-website/javascript.png
+https://storage.googleapis.com/unschool-portfolio-website/bootstrap4.png
+https://storage.googleapis.com/unschool-portfolio-website/react.png
+https://storage.googleapis.com/unschool-portfolio-website/mysql.png
+https://storage.googleapis.com/unschool-portfolio-website/python.png
+https://storage.googleapis.com/unschool-portfolio-website/flask.png

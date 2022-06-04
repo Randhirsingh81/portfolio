@@ -10,7 +10,7 @@ function Navbar() {
      Randhir Singh
         </Link>
         <Link to="/contact" className="ml-auto mx-3">
-          <button className="btn btn-outline-info">Contact me</button>
+          <button className="btn btn-outline-info" >Contact me</button>
         </Link>
 
         <button

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import web from "../public/assets/image1.jpg"
+import axios from "axios";
 
 const Context = React.createContext();
 
@@ -35,9 +35,8 @@ export class Provider extends Component {
       {
         id: 1,
         title: "Project 1",
-        imageUrl: "/assets/image1.jpg",
-
-        // "https://drive.google.com/file/d/1GQp3XOCSEjslXos64ncfJzML1Nt8unVX/view?usp=sharing",
+        imageUrl:
+          "https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-1.jpg",
         excerpt: "This is my project about...",
         body: "Body 1",
       },
@@ -45,8 +44,7 @@ export class Provider extends Component {
         id: 2,
         title: "Project 2",
         imageUrl:
-        "/assets/free-stock-image-2.jpg",
-          // "https://drive.google.com/file/d/1GQp3XOCSEjslXos64ncfJzML1Nt8unVX/view?usp=sharing",
+          "https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-2.jpg",
         excerpt: "This is my project about...",
         body: "Body 2",
       },
@@ -54,7 +52,7 @@ export class Provider extends Component {
         id: 3,
         title: "Project 3",
         imageUrl:
-          "https://drive.google.com/file/d/1GQp3XOCSEjslXos64ncfJzML1Nt8unVX/view?usp=sharing",
+          "https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-3.jpg",
         excerpt: "This is my project about...",
         body: "Body 3",
       },
@@ -96,10 +94,10 @@ export class Provider extends Component {
     recommendations: [
       {
         id: 1,
-        name: "Random guy 1",
+        name: "Random",
         company: "ABC company",
         designation: "CEO",
-        message: "He is a good engineer",
+        message: "He is a good engineer with excellent skills",
       },
       {
         id: 2,
@@ -190,6 +188,51 @@ export class Provider extends Component {
       },
     ],
   };
+
+  async componentDidMount() {
+    const [
+      responseRecommendations,
+      responseSkills,
+      responseProjects,
+      responseBlogs,
+    ] = await Promise.all([
+      axios.get("http://127.0.0.1:9000/api/recommendations"),
+      axios.get("http://127.0.0.1:9000/api/skills"),
+      axios.get("http://127.0.0.1:9000/api/projects"),
+      axios.get("http://127.0.0.1:9000/api/blogs"),
+    ]);
+
+    const newState = {};
+    if (
+      responseRecommendations.data.isSuccessful &&
+      responseRecommendations.data.results.length !== 0
+    ) {
+      newState.recommendations = responseRecommendations.data.results;
+    }
+
+    if (
+      responseSkills.data.isSuccessful &&
+      responseSkills.data.results.length !== 0
+    ) {
+      newState.skills = responseSkills.data.results;
+    }
+
+    if (
+      responseProjects.data.isSuccessful &&
+      responseProjects.data.results.length !== 0
+    ) {
+      newState.projects = responseProjects.data.results;
+    }
+
+    if (
+      responseBlogs.data.isSuccessful &&
+      responseBlogs.data.results.length !== 0
+    ) {
+      newState.blogs = responseBlogs.data.results;
+    }
+
+    this.setState(newState);
+  }
 
   render() {
     return (

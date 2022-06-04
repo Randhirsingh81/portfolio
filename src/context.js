@@ -71,7 +71,7 @@ export class Provider extends Component {
         id: 1,
         title: "Blog 1",
         imageUrl:
-        "../assets/project1.jpg",//"https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-1.jpg",
+        "../assets/project1.jpg",
         excerpt: "This is my blog about...",
         body: "Body 1",
       },
@@ -79,7 +79,7 @@ export class Provider extends Component {
         id: 2,
         title: "Blog 2",
         imageUrl:
-        "../assets/project2.jpg",//"https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-2.jpg",
+        "../assets/project2.jpg",
         excerpt: "This is my blog about...",
         body: "Body 2",
       },
@@ -87,7 +87,7 @@ export class Provider extends Component {
         id: 3,
         title: "Blog 3",
         imageUrl:
-        "../assets/project3.jpg",//"https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-3.jpg",
+        "../assets/project3.jpg",
         excerpt: "This is my blog about...",
         body: "Body 3",
       },
@@ -127,7 +127,8 @@ export class Provider extends Component {
         id: 1,
         name: "HTML5",
         imageUrl:
-          "https://storage.googleapis.com/unschool-portfolio-website/html5.png",
+        "../assets/html5.png",
+          
         starsTotal: 3,
         starsActive: 3,
       },
@@ -135,7 +136,7 @@ export class Provider extends Component {
         id: 2,
         name: "CSS3",
         imageUrl:
-          "https://storage.googleapis.com/unschool-portfolio-website/css3.png",
+        "../assets/css3.png",
         starsTotal: 3,
         starsActive: 3,
       },
@@ -143,15 +144,14 @@ export class Provider extends Component {
         id: 3,
         name: "Javascript",
         imageUrl:
-          "https://storage.googleapis.com/unschool-portfolio-website/javascript.png",
-        starsTotal: 3,
+        "../assets/javascript.png",
         starsActive: 2,
       },
       {
         id: 4,
         name: "Bootstrap 4",
         imageUrl:
-          "https://storage.googleapis.com/unschool-portfolio-website/bootstrap4.png",
+        "../assets/bootstrap4.png",
         starsTotal: 3,
         starsActive: 1,
       },
@@ -159,7 +159,7 @@ export class Provider extends Component {
         id: 5,
         name: "React",
         imageUrl:
-          "https://storage.googleapis.com/unschool-portfolio-website/react.png",
+        "../assets/react.png",
         starsTotal: 3,
         starsActive: 3,
       },
@@ -167,7 +167,7 @@ export class Provider extends Component {
         id: 6,
         name: "MySQL",
         imageUrl:
-          "https://storage.googleapis.com/unschool-portfolio-website/mysql.png",
+        "../assets/mysql.png",
         starsTotal: 3,
         starsActive: 2,
       },
@@ -175,7 +175,7 @@ export class Provider extends Component {
         id: 7,
         name: "Python",
         imageUrl:
-          "https://storage.googleapis.com/unschool-portfolio-website/python.png",
+        "../assets/python.png",
         starsTotal: 3,
         starsActive: 3,
       },
@@ -183,7 +183,7 @@ export class Provider extends Component {
         id: 8,
         name: "Flask",
         imageUrl:
-          "https://storage.googleapis.com/unschool-portfolio-website/flask.png",
+        "../assets/flask.png",
         starsTotal: 3,
         starsActive: 2,
       },

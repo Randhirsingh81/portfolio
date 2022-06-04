@@ -9,10 +9,10 @@ function Navbar() {
         <Link to="/" className="navbar-brand text-dark font-weight-bold">
      Randhir Singh
         </Link>
-        <Link to="/contact" className="ml-auto mx-3">
+      <div className="w-100 justify-content-end d-flex" > <Link to="/contact" className="ml-auto mx-3">
           <button className="btn btn-outline-info" >Contact me</button>
         </Link>
-
+        </div> 
         <button
           className="navbar-toggler"
           data-bs-toggle="collapse"

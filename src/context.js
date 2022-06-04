@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 
+
 const Context = React.createContext();
 
 export class Provider extends Component {
@@ -36,7 +37,7 @@ export class Provider extends Component {
         id: 1,
         title: "Project 1",
         imageUrl:
-          "https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-1.jpg",
+          "../assets/project1.jpg",//"https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-1.jpg",
         excerpt: "This is my project about...",
         body: "Body 1",
       },
@@ -44,7 +45,7 @@ export class Provider extends Component {
         id: 2,
         title: "Project 2",
         imageUrl:
-          "https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-2.jpg",
+        "../assets/project2.jpg",//"https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-2.jpg",
         excerpt: "This is my project about...",
         body: "Body 2",
       },
@@ -52,7 +53,7 @@ export class Provider extends Component {
         id: 3,
         title: "Project 3",
         imageUrl:
-          "https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-3.jpg",
+        "../assets/project3.jpg",//"https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-3.jpg",
         excerpt: "This is my project about...",
         body: "Body 3",
       },
@@ -60,7 +61,7 @@ export class Provider extends Component {
         id: 4,
         title: "Project 4",
         imageUrl:
-          "https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-1.jpg",
+        "../assets/project4.jpg",//"https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-1.jpg",
         excerpt: "This is my project about...",
         body: "Body 4",
       },
@@ -70,7 +71,7 @@ export class Provider extends Component {
         id: 1,
         title: "Blog 1",
         imageUrl:
-          "https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-1.jpg",
+        "../assets/project1.jpg",//"https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-1.jpg",
         excerpt: "This is my blog about...",
         body: "Body 1",
       },
@@ -78,7 +79,7 @@ export class Provider extends Component {
         id: 2,
         title: "Blog 2",
         imageUrl:
-          "https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-2.jpg",
+        "../assets/project2.jpg",//"https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-2.jpg",
         excerpt: "This is my blog about...",
         body: "Body 2",
       },
@@ -86,7 +87,7 @@ export class Provider extends Component {
         id: 3,
         title: "Blog 3",
         imageUrl:
-          "https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-3.jpg",
+        "../assets/project3.jpg",//"https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-3.jpg",
         excerpt: "This is my blog about...",
         body: "Body 3",
       },

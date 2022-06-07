@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-md fixed-top bg-white">
-      <div className="container my-2">
+      <div className="container my-2 ">
         <Link to="/" className="navbar-brand text-dark font-weight-bold">
      Randhir Singh
         </Link>
-       <Link to="/contact" className="ml-auto">
+       <Link to="/contact" className="ml-auto ">
           <button className="btn btn-outline-info" >Contact me</button>
         </Link>
         <button
@@ -34,7 +34,7 @@ function Navbar() {
             >
               Blogs
             </Link>
-          </div>
+            </div>
         </div>
       </div>
     </nav>

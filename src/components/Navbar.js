@@ -9,7 +9,7 @@ function Navbar() {
         <Link to="/" className="navbar-brand text-dark font-weight-bold">
      Randhir Singh
         </Link>
-       <Link to="/contact" className="ml-auto ">
+       <Link to="/contact" className="ml-auto " style = {{marginLeft:"auto"}}>
           <button className="btn btn-outline-info" >Contact me</button>
         </Link>
         <button
